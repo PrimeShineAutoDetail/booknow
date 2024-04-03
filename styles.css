@@ -1,0 +1,375 @@
+:root {
+  --main-color: #172737;
+  --secondary-color: #f4f0f0c5;
+  --accent-color: #ff4757;
+  --text-color: #2f3542;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.menu-bar {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.call-now {
+  text-align: right;
+}
+
+.hero-section {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+}
+
+.btn {
+  background: var(--accent-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.main-content {
+  padding: 20px;
+  background: var(--secondary-color);
+}
+
+.services-section,
+.gallery-section,
+.testimonials-section,
+.contact-section {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  overflow: hidden; /* Prevents overflow from being visible */
+  margin: 20px 0;
+}
+
+.gallery-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Or a specific width as per your design */
+  margin: auto; /* Center the gallery if needed */
+}
+
+.gallery-row {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item {
+  box-sizing: border-box;
+  padding: 5px; /* Adjust for spacing between items */
+  width: calc(
+    100% / 3
+  ); /* Divide container width by 3 to show 3 items at a time */
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.gallery-item img {
+  width: 100%; /* Make image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area without stretching image */
+}
+
+.gallery-button {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust based on gallery-container's width */
+  transform: translateY(-50%);
+  z-index: 2; /* Higher than the gallery-row but not more than necessary */
+  background: #000; /* Visible color */
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+}
+
+.bottom-menu-bar {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.menu-bar {
+  background-color: rgb(23, 39, 55);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Ensure menu bar stays on top */
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  margin: 0 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none; /* Remove default underline */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: lightblue;
+}
+
+.call-now {
+  font-size: 16px;
+  text-align: right;
+  margin-left: 5px;
+  margin-right: 50px;
+}
+
+.phone {
+  font-weight: bold;
+}
+
+/* CSS for vehicle selection */
+.vehicle-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  color: black;
+}
+
+.vehicle-type-text {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.vehicle-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vehicle-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.vehicle-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  border: 2px solid rgb(23, 39, 55);
+  margin-bottom: 5px;
+}
+
+.vehicle-text {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* CSS for selected vehicle type */
+.vehicle-btn.selected,
+.vehicle-btn:hover {
+  border: 4px solid rgb(23, 39, 55); /* Add border when selected or hovered */
+  /* Add any other styles you want for the selected button */
+}
+
+/* CSS for package boxes */
+.packages-container {
+  max-width: 1200px;
+  margin: 120px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.package {
+  width: calc(25% - 20px);
+  background-color: rgb(23, 39, 55);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.package-section {
+  border-bottom: 1px solid white; /* Add a white border to the bottom of each section */
+  padding-bottom: 10px; /* Add some padding to separate the border from the text */
+}
+
+.package h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.package ul {
+  padding-left: 0; /* Removed left padding to align with package box */
+  text-align: left;
+}
+
+.package ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.package ul li:before {
+  content: "\2713";
+  margin-right: 5px; /* Add some spacing between bullet and text */
+}
+
+.price {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  min-height: 100%;
+}
+
+.bottom-menu-bar {
+  background-color: rgb(23, 39, 55);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+  z-index: 9999; /* Ensure menu bar stays on top */
+  margin-top: 20px; /* Adjust the margin-top value as needed */
+}
+
+.bottom-menu-item {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-menu-item img {
+  width: 40px; /* Adjust logo and social media icon size */
+  height: auto;
+  margin-right: 10px; /* Add spacing between items */
+}
+
+.bottom-menu-item .phone,
+.bottom-menu-item .email,
+.bottom-menu-item .about-us-btn {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px; /* Add spacing between items */
+  font-size: 18px; /* Adjust font size */
+}
+
+.bottom-menu-item .about-us-btn:hover {
+  color: lightblue;
+}
+
+.instagram-icon {
+  width: 50px; /* Set the width of the image */
+  height: 50px; /* Set the height of the image */
+  margin-right: 50px;
+}
+
+.facebook-icon {
+  width: 50px; /* Set the width of the image */
+  height: 50px; /* Set the height of the image */
+  margin-right: 50px;
+}

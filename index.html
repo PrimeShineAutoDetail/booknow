@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Shine Auto Detailing</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- Top menu bar -->
+    <div class="menu-bar">
+      <!-- Company Logo -->
+      <div class="logo">
+        <img src="media/Logo-BlueR1.jpg" alt="Company Logo" />
+      </div>
+      <!-- Menu items -->
+      <div class="menu">
+        <a href="index.html" class="menu-item">Home Page</a>
+        <a href="services.html" class="menu-item">Services</a>
+        <a href="about.html" class="menu-item">About Us</a>
+        <a href="contact.html" class="menu-item">Contact</a>
+      </div>
+      <!-- Call Now text with phone number -->
+      <div class="call-now">
+        Call Now<br />
+        <span class="phone">647-581-2214</span>
+      </div>
+    </div>
+
+    <!-- Hero section -->
+    <div class="hero-section">
+      <video autoplay muted loop class="hero-video">
+          <source src="media/BENZ.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-content">
+          <h1>Exquisite Car Detailing</h1>
+          <p>Detailing perfection for your vehicle, delivered to your doorstep.</p>
+          <!-- Update the href attribute to your appointment scheduling page URL -->
+          <a href="https://primeshineautodetail.simplybook.me" class="btn primary-btn">Schedule Appointment</a>
+      </div>
+  </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <!-- Services section -->
+      <div class="services-section">
+        <section class="services" id="services">
+          <h2>Our Services</h2>
+          <div class="service-options">
+            <a href="services.html" class="service-item">
+              <img src="media/sedan.png" alt="Sedan" />
+              <h3>Sedan Detailing</h3>
+            </a>
+            <a href="services.html" class="service-item">
+              <img src="media/suv.png" alt="SUV" />
+              <h3>SUV Detailing</h3>
+            </a>
+            <a href="services.html" class="service-item">
+              <img src="media/truck.png" alt="Truck" />
+              <h3>Truck Detailing</h3>
+            </a>
+            <a href="services.html" class="service-item">
+              <img src="media/van.png" alt="Van" />
+              <h3>Van Detailing</h3>
+            </a>
+          </div>
+        </section>
+      </div>
+
+
+      
+      <!-- Gallery section -->
+      <section class="gallery" id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+          <div class="gallery-row">
+            <!-- All gallery items in a single row -->
+            <div class="gallery-item">
+              <img src="media/brab.jpg" alt="Gallery Image 1" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/MDX.jpg" alt="Gallery Image 2" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/Newton.jpg" alt="Gallery Image 3" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/tesla.jpg" alt="Gallery Image 4" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/paintcor.JPG" alt="Gallery Image 5" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/supra.JPG" alt="Gallery Image 6" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/fiat.jpg" alt="Gallery Image 7" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/brab2.jpg" alt="Gallery Image 8" />
+            </div>
+            <div class="gallery-item">
+              <img src="media/bmw.jpg" alt="Gallery Image 9" />
+            </div>
+            <!-- Add as many gallery-item divs as you have images -->
+          </div>
+          <button id="next-button" class="gallery-button">&#10095;</button>
+        </div>
+      </section>
+
+      <!-- question section -->
+      <div class="question-section">
+        <h2>Questions</h2>
+        <div class="question" id="question1">
+            <div class="question-header">
+                <h3>What services do you offer?</h3>
+                <button onclick="toggleAnswer(this)" class="toggle-answer">&#10095;</button>
+            </div>
+            <div class="answer">
+                <p>We offer a wide range of detailing services including exterior and interior cleaning, waxing, and polishing.</p>
+            </div>
+        </div>
+        
+        <div class="question" id="question2">
+          <div class="question-header">
+              <h3>What are we?</h3>
+              <button onclick="toggleAnswer(this)" class="toggle-answer">&#10095;</button>
+          </div>
+          <div class="answer">
+              <p>We're a team of young go-getters who launched our business in 2023. Our first year was a success, so this year, we're going all out. We've invested in top-notch equipment, prioritizing quality and timely delivery. Despite our youth, we bring years of experience and a long list of happy customers to the table.</p>
+          </div>
+      </div>
+
+
+    </div>
+
+    <!-- Bottom menu bar -->
+    <div class="bottom-menu-bar">
+      <div class="bottom-menu-item">
+        <img src="media/Logo-BlueR1.jpg" alt="Company Logo" />
+      </div>
+      <div class="call-now">
+        <span class="phone">647-581-2214</span>
+      </div>
+      <div class="bottom-menu-item">
+        <span class="email">pshineautodetail@gmail.com</span>
+      </div>
+      <div class="bottom-menu-item">
+        <a
+          href="https://www.instagram.com/primeshinee_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+        >
+          <img src="media/instagram-icon.jpg" alt="Instagram" class="social-icon" />
+        </a>
+        <a href="https://www.facebook.com/your_facebook_page" target="_blank">
+          <img src="media/facebook-icon.png" alt="Facebook" class="social-icon" />
+        </a>
+      </div>
+      <div class="bottom-menu-item">
+        <a href="about.html" class="about-us-link">About Us</a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
