@@ -14,29 +14,41 @@ html {
 }
 
 @media (max-width: 768px) {
+  body,
+  html {
+    font-size: 14px; /* Adjust text size for better readability on small screens */
+  }
+
   .menu-bar {
-    flex-direction: column;
+    padding: 10px; /* Reduce padding */
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem; /* Adjust hero section heading size */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Adjust paragraph size for readability */
+  }
+
+  .services-section,
+  .gallery-section,
+  .contact-section {
+    padding: 20px 10px; /* Adjust padding for section content */
+  }
+
+  .service-options {
+    grid-template-columns: 1fr; /* Stack service options vertically */
+  }
+
+  .bottom-menu-bar {
+    flex-direction: column; /* Stack bottom menu items vertically */
     align-items: center;
+    padding: 20px;
   }
 
-  .logo img {
-    width: 80%; /* Adjust the logo size on smaller screens */
-    max-width: 200px; /* Prevent the logo from being too large */
-  }
-
-  .menu {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-item {
-    padding: 10px 0; /* Add more padding to each menu item for easier tap */
-  }
-
-  .call-now {
-    font-size: smaller; /* Adjust font size for smaller screens */
+  .bottom-menu-item:not(:last-child) {
+    margin-bottom: 10px; /* Add space between stacked items */
   }
 }
 
