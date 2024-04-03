@@ -189,3 +189,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get current URL path
+  let path = window.location.pathname;
+  path = path.replace(/\/$/, "").substring(path.lastIndexOf("/") + 1);
+
+  // Loop through menu items and set active class
+  document.querySelectorAll(".menu-item").forEach((item) => {
+    if (
+      item.getAttribute("href") === path ||
+      (item.getAttribute("href") === "index.html" && path === "")
+    ) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
+  });
+});
