@@ -73,6 +73,46 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu-item {
+    margin-bottom: 10px; /* Add space between stacked items */
+    width: 100%; /* Optional: Make menu items full width */
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 50%; /* Make the logo smaller */
+    margin: 0 auto; /* Center the logo if necessary */
+  }
+
+  .menu-bar {
+    padding: 10px; /* Reduce padding in the header */
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%; /* Stack columns vertically */
+  }
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    width: 100%; /* Make form inputs full width */
+    margin-bottom: 10px; /* Add space between inputs */
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .menu-bar {
   background-color: var(--main-color);
   color: var(--secondary-color);
