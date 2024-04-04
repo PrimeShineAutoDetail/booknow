@@ -13,12 +13,6 @@ html {
   font-family: "Arial", sans-serif;
 }
 
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 .problem-element {
   width: 100%; /* Or 'max-width: 100%;' to ensure it doesn't overflow */
   box-sizing: border-box; /* Include padding and borders in the element's width */
