@@ -18,7 +18,7 @@ function showPrices(vehicleType, button) {
       case "sedan":
         switch (package.id) {
           case "outside-detailing":
-            price.textContent = "$80";
+            price.textContent = "$70";
             break;
           case "interior-detailing":
             price.textContent = "$125";

@@ -40,8 +40,37 @@ html {
     font-size: 14px; /* Adjust text size for better readability on small screens */
   }
 
-  .menu-bar {
-    padding: 10px; /* Reduce padding */
+  .menu-bar,
+  .bottom-menu-bar {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+  }
+
+  .logo img,
+  .social-icon {
+    height: 50px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-item {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+
+  .menu-item:hover,
+  .menu-item.active {
+    background-color: var(--accent-color);
+    border-radius: 5px;
   }
 
   .hero-content h1 {
@@ -457,50 +486,35 @@ body {
   min-height: 100%;
 }
 
+.menu-bar,
 .bottom-menu-bar {
-  background-color: rgb(23, 39, 55);
-  color: white;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  width: 100%;
-  z-index: 9999; /* Ensure menu bar stays on top */
-  margin-top: 20px; /* Adjust the margin-top value as needed */
-}
-
-.bottom-menu-item {
-  display: flex;
+  padding: 10px 50px;
   align-items: center;
 }
 
-.bottom-menu-item img {
-  width: 40px; /* Adjust logo and social media icon size */
-  height: auto;
-  margin-right: 10px; /* Add spacing between items */
+.logo img,
+.social-icon {
+  height: 50px;
 }
 
-.bottom-menu-item .phone,
-.bottom-menu-item .email,
-.bottom-menu-item .about-us-btn {
-  color: white;
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  color: var(--secondary-color);
   text-decoration: none;
-  margin-right: 20px; /* Add spacing between items */
-  font-size: 18px; /* Adjust font size */
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
 }
 
-.bottom-menu-item .about-us-btn:hover {
-  color: lightblue;
-}
-
-.instagram-icon {
-  width: 50px; /* Set the width of the image */
-  height: 50px; /* Set the height of the image */
-  margin-right: 50px;
-}
-
-.facebook-icon {
-  width: 50px; /* Set the width of the image */
-  height: 50px; /* Set the height of the image */
-  margin-right: 50px;
+.menu-item:hover,
+.menu-item.active {
+  background-color: var(--accent-color);
+  border-radius: 5px;
 }

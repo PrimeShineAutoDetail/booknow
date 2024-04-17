@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --main-color: #172737;
+  --secondary-color: #f4f0f0c5;
+  --accent-color: #ff4757;
+  --text-color: #2f3542;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: var(--secondary-color);
+}
+
+.menu-bar,
+.bottom-menu-bar {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+}
+
+.logo img,
+.social-icon {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero-content h1,
+.hero-content p {
+  z-index: 1;
+  color: var(--main-color);
+  text-align: center;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.gallery-item img,
+.hero-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* Rounds the corners of the image */
+}
+
+@media (max-width: 768px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+
+  .menu-bar,
+  .bottom-menu-bar {
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu-item {
+    margin-bottom: 10px;
+  }
+
+  .logo img,
+  .social-icon {
+    width: auto;
+  }
+}
+
+/* Additional responsive adjustments if needed */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+.about-hero-section {
+  text-align: center;
+  padding: 50px 20px; /* Adjust padding to your preference */
+  background-color: #fff; /* Or any color that matches your design */
+}
+
+.container {
+  max-width: 1200px; /* Or your preferred max width */
+  margin: 0 auto; /* This will center your container */
+}
+
+.title {
+  color: #222429; /* Font color RGB(34, 36, 41) */
+  font-family: "Poppins", sans-serif; /* Font family with fallback to sans-serif */
+  font-size: 68px; /* Font size set to 68px */
+  margin-bottom: 0.5em; /* Space between title and subtitle */
+}
+
+.subtitle {
+  font-size: 1.5em; /* Slightly smaller font size for the subtitle */
+  color: #666; /* Lighter text color for the subtitle */
+  margin-bottom: 1.5em; /* Space between subtitle and image */
+}
+
+.image-container {
+  max-width: 100%; /* Ensures the image container does not exceed the width of the parent */
+  padding: 0 15px; /* Padding on sides, can be adjusted */
+}
+
+.rounded-image {
+  max-width: 50%; /* Reducing the maximum width to 50% */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 20px; /* Rounds the corners of the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+  display: block; /* Ensures the image block display */
+  margin: 0 auto; /* Centers the image within its container */
+}
+
+.main-content h2 {
+  font-family: "Poppins", sans-serif; /* Specifying the font family */
+  font-size: 34px; /* Setting the font size */
+  font-style: normal; /* Ensuring the font style is normal */
+  font-variant-caps: normal; /* Standard font variant for capital letters */
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 500; /* Normal weight for readability */
+  color: var(--text-color); /* Utilizing your root variable for text color */
+  text-align: center; /* Centering the header text */
+  margin-top: 20px; /* Spacing at the top of the header */
+  margin-bottom: 20px; /* Spacing below the header */
+}
+
+h3 {
+  font-family: "Poppins", sans-serif; /* Using Poppins font */
+  font-size: 24px; /* Setting the size of the font */
+  font-style: normal; /* Ensuring the font style is normal */
+  font-variant-caps: normal; /* Default settings for capital letters handling */
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  font-weight: 400; /* Lighter font weight for a refined appearance */
+  color: var(--text-color); /* Utilizing a variable for text color if defined */
+  margin-top: 15px; /* Top margin for spacing */
+  margin-bottom: 15px; /* Bottom margin for spacing */
+  text-align: center; /* Center aligning the text */
+}
+
+.main-content {
+  max-width: 800px; /* Limits the width of the text to enhance readability */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 20px; /* Adds padding around the text */
+  font-family: "Poppins", sans-serif; /* Modern, readable font */
+  text-align: center; /* Centers all the text inside main-content */
+}
+
+.content-text {
+  margin-bottom: 20px; /* Adds space below each paragraph */
+  font-size: 20px; /* Specific size for better readability */
+  line-height: 1.6; /* Increases line height for readability */
+  color: #333; /* Darker text for better contrast */
+  font-weight: 300; /* Lighter font-weight as specified */
+  font-style: normal; /* Ensures the font style is normal */
+  font-variant-caps: normal; /* Default settings for font variant */
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+}
+
+.car-animation-strip {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.car-track {
+  display: flex;
+  animation: loopCars 30s linear infinite;
+  /* Add extra spacing at the start and end for the blur effect */
+  padding-left: 100px; /* Same width as the blur effect */
+  padding-right: 100px;
+}
+
+.animated-car {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 70px; /* Space between cars */
+}
+
+/* Keyframes for the animation */
+@keyframes loopCars {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * (100px + 70px) * 5));
+  } /* Moving left the width of one set of images */
+}
+
+/* Gradient overlays for blurring edges */
+.car-animation-strip::before,
+.car-animation-strip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px; /* Width of the blur effect */
+  z-index: 2;
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+.car-animation-strip::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent);
+}
+
+.car-animation-strip::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent);
+}
+
+@media (max-width: 768px) {
+  .animated-car {
+    width: 50px; /* Smaller cars for smaller screens */
+    margin-right: 35px; /* Smaller margin for smaller screens */
+  }
+  /* Update the keyframes to match the new size of the images on smaller screens */
+  @keyframes loopCars {
+    100% {
+      transform: translateX(
+        calc(-1 * (50px + 35px) * (number_of_images_in_one_set + 1))
+      );
+    }
+  }
+}
