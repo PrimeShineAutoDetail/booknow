@@ -1,0 +1,396 @@
+/* Root variables to maintain consistent color scheme and typography */
+:root {
+  --main-color: #172737;
+  --secondary-color: #f4f0f0c5;
+  --accent-color: #ff4757;
+  --text-color: #2f3542;
+}
+
+/* Base reset for body and html to ensure margin and padding consistency */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Header menu bar styling */
+.menu-bar,
+.bottom-menu-bar {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+}
+
+.logo img,
+.social-icon {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.services {
+  padding: 40px 20px;
+  background: var(--secondary-color);
+  text-align: center;
+}
+
+.service-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service-item img {
+  height: 100px;
+}
+
+.service-item {
+  /* Other styles */
+  text-decoration: none; /* Removes underline from links */
+  color: inherit; /* Inherits the text color from the parent element */
+  display: block; /* Ensures the link fills the container for clickability */
+}
+
+.service-item:hover {
+  /* Optional: Any hover effects like background color change */
+  background-color: #f2f2f2; /* Example hover background color */
+}
+
+.vehicle-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  color: black;
+}
+
+.vehicle-type-text {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.vehicle-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vehicle-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.vehicle-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  border: 2px solid rgb(23, 39, 55);
+  margin-bottom: 5px;
+}
+
+.vehicle-text {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* CSS for selected vehicle type */
+.vehicle-btn.selected,
+.vehicle-btn:hover {
+  border: 4px solid rgb(23, 39, 55); /* Add border when selected or hovered */
+  /* Add any other styles you want for the selected button */
+}
+
+/* CSS for package boxes */
+.packages-container {
+  max-width: 1200px;
+  margin: 120px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.package {
+  width: calc(25% - 20px);
+  background-color: rgb(23, 39, 55);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+
+.package-section {
+  border-bottom: 1px solid white; /* Add a white border to the bottom of each section */
+  padding-bottom: 10px; /* Add some padding to separate the border from the text */
+}
+
+.package h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.package ul {
+  padding-left: 0; /* Removed left padding to align with package box */
+  text-align: left;
+}
+
+.package ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.package ul li:before {
+  content: "\2713";
+  margin-right: 5px; /* Add some spacing between bullet and text */
+}
+
+.price {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.hero-section {
+  background: linear-gradient(
+      to right,
+      rgb(25, 31, 31) 30%,
+      rgba(47, 79, 79, 0) 85%
+    ),
+    url("media/herodetail.jpeg") no-repeat center center;
+  background-size: cover;
+  padding: 50px 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  padding-left: 10%; /* Add padding to the left side */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* Align text to the left */
+  padding-right: 50%;
+}
+
+.hero-content h1 {
+  font-size: 58px; /* Set the font size as specified */
+  font-family: "Poppins", sans-serif; /* Use Poppins as the font family */
+  max-width: 600px;
+  font-weight: 300; /* Lighter font weight of 300 */
+  line-height: normal; /* Default line height */
+  text-transform: uppercase; /* Capitalize letters */
+  margin-bottom: 5rem; /* Space below the heading */
+  font-style: normal; /* Normal font style */
+  font-variant-caps: normal; /* No special capitalization effects */
+  font-variant-east-asian: normal; /* Normal setting for East Asian typography */
+  font-variant-ligatures: normal; /* Normal ligatures */
+  font-variant-numeric: normal; /* Normal numeric styling */
+  color: #ffffffe9; /* Assuming you want white text */
+}
+/* Add additional styles for subtitle and button if necessary */
+.hero-content p.subtitle {
+  margin-bottom: 0px; /* Adds space below each paragraph */
+  margin-top: 100px;
+  font-size: 20px; /* Specific size for better readability */
+  line-height: 1.6; /* Increases line height for readability */
+  color: #ffffffdb; /* Darker text for better contrast */
+  font-weight: 300; /* Lighter font-weight as specified */
+  font-style: normal; /* Ensures the font style is normal */
+  font-variant-caps: normal; /* Default settings for font variant */
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+}
+
+/* Style for the button */
+.btn {
+  background-color: #ffffff; /* Set the background to white */
+  color: #007bff; /* Text color for the button, change if needed */
+  border: 2px solid #ffffff; /* Border color set to white */
+  padding: 10px 25px; /* Padding for the button size */
+  border-radius: 40px; /* Rounded corners for the button */
+  font-family: "Poppins", sans-serif; /* Poppins font family */
+  font-size: 18px; /* Font size */
+  font-weight: 600; /* Font weight */
+  /* text-transform: uppercase; Uppercase text */
+  cursor: pointer; /* Cursor to indicate the button is clickable */
+  transition: all 0.3s ease; /* Transition for interactive states */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  outline: none; /* Remove the outline */
+  text-decoration: none; /* Remove text decoration */
+}
+
+.hero-section .form-fields .btn {
+  /* Add your styles here */
+  border-radius: 25px; /* Increased for more roundness */
+  /* Other styles... */
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #e6e6e6; /* Lighter color on hover */
+  border-color: #e6e6e6; /* Border color to match on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Darker box shadow on hover */
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.form-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-variant-caps: normal;
+  font-variant-east-asian: normal;
+  font-variant-ligatures: normal;
+  font-variant-numeric: normal;
+  color: #ffffffaf; /* or another color of your choice */
+  margin-bottom: 5px; /* Adjust as needed for spacing */
+  display: block; /* Makes the label take up the full width */
+}
+
+.form-fields {
+  background-color: #ffffff; /* Set the background to white */
+  border-radius: 30px; /* Rounded corners for the container */
+  padding: 15px; /* Padding inside the container */
+  display: flex; /* Use flexbox to align child elements */
+  justify-content: space-between; /* Space out the child elements */
+  align-items: center; /* Align the child elements vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  margin-bottom: 60px;
+}
+
+/* Style for the individual select elements within the container */
+.form-fields select {
+  border: 1px solid #ccc; /* Border for the selects */
+  padding: 10px; /* Padding inside the selects */
+  border-radius: 10px; /* Rounded corners for the selects */
+  margin-right: 10px; /* Space between the selects and the button */
+}
+
+/* Ensure the 'See my price' button is also styled to match */
+.form-fields .btn {
+  border: none; /* Remove border from the button */
+  background-color: #007bff; /* Background color for the button */
+  color: #ffffff; /* Text color for the button */
+  padding: 10px 25px; /* Padding for the button */
+  border-radius: 10px; /* Rounded corners for the button */
+  text-transform: uppercase; /* Uppercase text for the button */
+  font-weight: bold; /* Bold font for the button */
+}
+
+.car-detail-form select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.car-detail-form .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .form-fields {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .car-detail-form .btn {
+    width: 100%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  min-height: 100%;
+}
+
+.menu-bar,
+.bottom-menu-bar {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: center;
+}
+
+.logo img,
+.social-icon {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
